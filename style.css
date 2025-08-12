@@ -1,0 +1,74 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container do jogo */
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #4CAF50;
+    overflow: hidden;
+}
+
+/* Avião (Jogador) */
+.player {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #2E8B57;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Alvo */
+.target {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FFD700;
+}
+
+/* Mísseis */
+.missile {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #FF4500;
+    transform: rotate(90deg);
+}
+
+/* Tela de Game Over */
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 48px;
+    color: white;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Pontuação */
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+}
